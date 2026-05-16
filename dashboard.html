@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  display:flex;
+}
+
+.sidebar {
+  width:200px;
+  background:#111;
+  color:white;
+  padding:20px;
+  height:100vh;
+}
+
+.main {
+  flex:1;
+  padding:20px;
+}
+
+.cards {
+  display:flex;
+  gap:20px;
+}
+
+.box {
+  padding:20px;
+  background:#f0f0f0;
+  border-radius:10px;
+}
+
+.chart {
+  display:flex;
+  gap:10px;
+  height:200px;
+  align-items:flex-end;
+  margin-top:40px;
+}
+
+.bar {
+  width:40px;
+  background:#4f46e5;
+}
+</style>
+<body>
+
+<div class="sidebar">
+  <h2>Panel</h2>
+  <p>Dashboard</p>
+  <p>Users</p>
+  <p>Settings</p>
+</div>
+
+<div class="main">
+  <h1>Analytics</h1>
+
+  <div class="cards">
+    <div class="box">Users: 1200</div>
+    <div class="box">Sales: $3400</div>
+    <div class="box">Visits: 8900</div>
+  </div>
+
+  <div class="chart">
+    <div class="bar" style="height:40%"></div>
+    <div class="bar" style="height:70%"></div>
+    <div class="bar" style="height:30%"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
